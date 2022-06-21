@@ -75,10 +75,11 @@ footer {
     margin-top: 20px;
 }
 
-.holder { /*para que quede centrado*/
+.holder {
+    /*para que quede centrado*/
     max-width: 960px;
     margin: 0 auto;
- 
+
 }
 
 h2 {
@@ -89,10 +90,11 @@ h2 {
 /*home*/
 
 .bienvenidos {
-    width: 75%; /*el porcentaje es del 960 que es el ancho del holder*/
+    width: 75%;
+    /*el porcentaje es del 960 que es el ancho del holder*/
     padding-right: 10px;
     box-sizing: border-box;
-   /* background-color: orange; */
+    /* background-color: orange; */
 }
 
 .testimonios {
@@ -102,7 +104,8 @@ h2 {
 
 .columnas {
     display: flex;
-    justify-content: space-between; /*para separar bienvenidos de tertimonios (el gap es la distancia de separacion se usa con el display)*/
+    justify-content: space-between;
+    /*para separar bienvenidos de tertimonios (el gap es la distancia de separacion se usa con el display)*/
     gap: 20px;
 }
 
@@ -111,7 +114,8 @@ h2 {
     font-style: italic;
     font-size: 22px;
     /*background-color: yellow;*/
-    display: block; /*arma las cajitas*/
+    display: block;
+    /*arma las cajitas*/
     margin: 12px 0;
 }
 
@@ -177,7 +181,8 @@ h2 {
     padding: 16px;
     margin: 16px 0;
     display: flex;
-    gap: 32px;  /*no uso margenes porque la imagen va a ir de un lado y del otro*/
+    gap: 32px;
+    /*no uso margenes porque la imagen va a ir de un lado y del otro*/
     align-items: center;
 }
 
@@ -196,7 +201,7 @@ h2 {
     font-size: 13px;
 }
 
-.servicio img{
+.servicio img {
     border-radius: 13px;
     display: block;
     max-width: 225px;
@@ -206,8 +211,91 @@ h2 {
     flex-direction: row-reverse;
 }
 
-
-
-
-
 /*fin servicios*/
+
+/*inicio de galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.galeria img {
+    width: 18%;
+    border: 1px solid #ddd;
+    padding: 0. 3em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+
+/*fin de la galeria*/
+
+/*inicio de contacto*/
+
+.contacto {
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos p {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p {
+    display: flex; /*pone la palabra al lado del espacio a llenar*/
+}
+
+.formulario p label {
+    min-width: 80px;
+    /*ancho de las palabras antes de llenar los espacios en blanco*/
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+
+.formulario p:nth-child(4) {
+    /*background-color: red;*/
+    align-items: start; /*fija la palabra mensaje al principio del espacio a llenar por mas de que lo agrandemos*/
+}
+
+
+.formulario textarea {
+    resize: none; /*fija el tamanio de las cajas para llenar*/
+    height: 150px;
+}
+
+.formulario input[type="submit"] {
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px 
+    width: auto;
+    position: relative;
+    left: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.formulario input[type="submit"]: hover {
+    background-color: #2e64al;
+}
+
+/*fin de contacto*/
